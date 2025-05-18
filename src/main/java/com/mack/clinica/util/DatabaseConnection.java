@@ -28,7 +28,7 @@ public class DatabaseConnection {
         } catch (SQLException e) {
             // Exibe erro no console para diagnóstico
             System.err.println("Erro ao conectar ao banco de dados: " + e.getMessage());
-            e.printStackTrace();
+            // Para produção, use um logger apropriado em vez de printStackTrace
 
             // Lança uma exceção mais genérica para o Servlet tratar como erro de banco
             throw new RuntimeException("Erro ao conectar ao banco de dados.", e);
