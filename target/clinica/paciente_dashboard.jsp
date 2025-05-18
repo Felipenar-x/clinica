@@ -14,15 +14,15 @@
         <div class="nav-links">
             <a href="paciente_dashboard">Home</a>
             <a href="agendarConsulta">Agendamento de Consultas</a>
-            <a href="#">Minha Agenda</a>
-            <a href="#">Meu Cadastro</a>
+            <a href="carne">Minha Agenda</a>
+            <a href="showusercadastro.jsp">Meu Cadastro</a>
             <a href="${pageContext.request.contextPath}/logout" class="logout-link">Logout</a>
         </div>
     </div>
 
     <!-- Conteúdo principal -->
     <div class="content">
-        <h1>Painel do pensil</h1>
+        <h1>Painel do Paciente</h1>
         <p>Bem-vindo ao seu painel, onde você poderá visualizar informações e agendar consultas.</p>
     </div>
 

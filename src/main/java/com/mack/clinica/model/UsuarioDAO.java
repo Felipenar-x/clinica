@@ -40,4 +40,31 @@ public class UsuarioDAO {
         }
         return null;
     }
+
+    public Usuario buscarPorId(int id, String realPathBase) {
+    Usuario u = null;
+    String sql = "SELECT * FROM usuarios WHERE id = ?";
+
+    try (Connection conn = DatabaseConnection.getConnection(realPathBase);
+         PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+        stmt.setInt(1, id);
+        ResultSet rs = stmt.executeQuery();
+
+        if (rs.next()) {
+            u = new Usuario();
+            u.setId(rs.getInt("id"));
+            u.setNome(rs.getString("nome"));
+            u.setEmail(rs.getString("email"));
+            u.setCpf(rs.getString("cpf"));
+            u.setCelular(rs.getString("celular"));
+            u.setTipo(rs.getString("tipo"));
+        }
+
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+
+    return u;
+}
 }
