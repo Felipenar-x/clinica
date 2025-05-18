@@ -14,8 +14,13 @@
         <div class="nav-links">
             <a href="paciente_dashboard">Home</a>
             <a href="agendarConsulta">Agendamento de Consultas</a>
+<<<<<<< HEAD
             <a href="carne">Minha Agenda</a>
             <a href="showusercadastro.jsp">Meu Cadastro</a>
+=======
+            <a href="minha_agenda">Minha Agenda</a>
+            <a href="meu_cadastro">Meu Cadastro</a>
+>>>>>>> 8630b94ef89c2091707645b806ee34ad4f37827d
             <a href="${pageContext.request.contextPath}/logout" class="logout-link">Logout</a>
         </div>
     </div>
