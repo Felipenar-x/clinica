@@ -22,7 +22,7 @@
 
     <!-- Conteúdo principal -->
     <div class="content">
-        <h1>Painel do Paciente</h1>
+        <h1>Painel do pensil</h1>
         <p>Bem-vindo ao seu painel, onde você poderá visualizar informações e agendar consultas.</p>
     </div>
 
