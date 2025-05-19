@@ -183,3 +183,69 @@ form button:hover {
     background-color: #0056b3;
 }
 
+.agenda-table {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.agenda-table th, .agenda-table td {
+    padding: 16px 12px;
+    text-align: center;
+}
+.agenda-table th {
+    background: #007BFF;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    border-bottom: 2px solid #0056b3;
+}
+.agenda-table tr:nth-child(even) {
+    background: #000000;
+    color: #000000;
+}
+.agenda-table tr:nth-child(odd) {
+    background: #000000;
+    color: #000000;
+}
+.agenda-table td {
+    font-size: 15px;
+    color: #333;
+}
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000000;
+}
+.status-badge.status-agendado, .status-badge.status-agendado * {
+    background: #007BFF !important;
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+    text-shadow: none !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+}
+.status-badge.status-agendado span,
+.status-badge.status-agendado strong,
+.status-badge.status-agendado em {
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+}
+.status-realizado {
+    background: #28a745;
+}
+.status-cancelado {
+    background: #db0101;
+}
+.status-pendente {
+    background: #ffc107;
+    color: #333;
+}
+

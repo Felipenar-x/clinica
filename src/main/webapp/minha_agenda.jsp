@@ -28,7 +28,7 @@
         <%
             } else {
         %>
-        <table border="1" style="margin: 0 auto;">
+        <table class="agenda-table">
             <tr>
                 <th>Data e Hora</th>
                 <th>Médico</th>
@@ -41,7 +41,13 @@
             <tr>
                 <td><%= c.getDataHora() %></td>
                 <td><%= c.getMedicoNome() %></td>
-                <td><%= c.getStatus() %></td>
+                <td>
+                    <%
+                        String status = c.getStatus();
+                        String statusClass = status == null ? "" : status.toLowerCase().replace("á", "a").replace("ã", "a").replace("â", "a").replace("é", "e").replace("ê", "e").replace("í", "i").replace("ó", "o").replace("ô", "o").replace("õ", "o").replace("ú", "u").replace("ç", "c").replaceAll("[^a-z]", "");
+                    %>
+                    <span class="status-badge status-<%= statusClass %>"><%= status %></span>
+                </td>
                 <td><%= c.getObservacoes() != null ? c.getObservacoes() : "" %></td>
             </tr>
             <%
