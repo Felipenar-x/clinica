@@ -11,7 +11,7 @@ import com.mack.clinica.util.DatabaseConnection;
 
 public class ConsultaDAO {
 
-    private String realPathBase;
+    private final String realPathBase;
 
     public ConsultaDAO(String realPathBase) {
         this.realPathBase = realPathBase;

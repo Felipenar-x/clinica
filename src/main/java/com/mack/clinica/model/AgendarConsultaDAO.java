@@ -11,7 +11,7 @@ import com.mack.clinica.util.DatabaseConnection;
 
 public class AgendarConsultaDAO {
 
-    private String realPathBase;
+    private final String realPathBase;
 
     public AgendarConsultaDAO(String realPathBase) {
         this.realPathBase = realPathBase;
@@ -30,7 +30,6 @@ public class AgendarConsultaDAO {
             return linhasAfetadas > 0;
         } catch (SQLException e) {
             System.out.println("entrou aqui");
-            e.printStackTrace();
             return false;
         }
     }

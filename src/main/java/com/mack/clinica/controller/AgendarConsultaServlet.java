@@ -69,8 +69,7 @@ public class AgendarConsultaServlet extends HttpServlet {
                 response.sendRedirect("index.jsp?erro=agendar");
             }
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException | NumberFormatException e) {
             response.sendRedirect("paciente_dashboard.jsp?msg=erro");
         }
     }
