@@ -65,6 +65,28 @@ public class UsuarioDAO {
         return pacientes;
     }
 
+    public List<Usuario> listarMedicos(String realPathBase) {
+        List<Usuario> medicos = new ArrayList<>();
+        String sql = "SELECT id, nome, email, cpf, celular, tipo FROM usuarios WHERE tipo = 'medico'";
+        try (Connection conn = DatabaseConnection.getConnection(realPathBase);
+             PreparedStatement stmt = conn.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery()) {
+            while (rs.next()) {
+                Usuario u = new Usuario();
+                u.setId(rs.getInt("id"));
+                u.setNome(rs.getString("nome"));
+                u.setEmail(rs.getString("email"));
+                u.setCpf(rs.getString("cpf"));
+                u.setCelular(rs.getString("celular"));
+                u.setTipo(rs.getString("tipo"));
+                medicos.add(u);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return medicos;
+    }
+
     public Usuario buscarPorId(int id, String realPathBase) {
         String sql = "SELECT id, nome, email, cpf, celular, tipo FROM usuarios WHERE id = ?";
         try (Connection conn = DatabaseConnection.getConnection(realPathBase);
@@ -102,7 +124,38 @@ public class UsuarioDAO {
         }
     }
 
+    public void inserirMedico(Usuario u, String realPathBase) {
+        String sql = "INSERT INTO usuarios (nome, email, cpf, celular, tipo, senha) VALUES (?, ?, ?, ?, ?, ?)";
+        try (Connection conn = DatabaseConnection.getConnection(realPathBase);
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, u.getNome());
+            stmt.setString(2, u.getEmail());
+            stmt.setString(3, u.getCpf());
+            stmt.setString(4, u.getCelular());
+            stmt.setString(5, "medico");
+            stmt.setString(6, "123"); // senha padrão
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void atualizarPaciente(Usuario u, String realPathBase) {
+        String sql = "UPDATE usuarios SET nome=?, email=?, cpf=?, celular=? WHERE id=?";
+        try (Connection conn = DatabaseConnection.getConnection(realPathBase);
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, u.getNome());
+            stmt.setString(2, u.getEmail());
+            stmt.setString(3, u.getCpf());
+            stmt.setString(4, u.getCelular());
+            stmt.setInt(5, u.getId());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void atualizarMedico(Usuario u, String realPathBase) {
         String sql = "UPDATE usuarios SET nome=?, email=?, cpf=?, celular=? WHERE id=?";
         try (Connection conn = DatabaseConnection.getConnection(realPathBase);
              PreparedStatement stmt = conn.prepareStatement(sql)) {
