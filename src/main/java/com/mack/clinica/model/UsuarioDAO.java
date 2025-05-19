@@ -42,6 +42,7 @@ public class UsuarioDAO {
         return null;
     }
 
+<<<<<<< HEAD
     public List<Usuario> listarPacientes(String realPathBase) {
         List<Usuario> pacientes = new ArrayList<>();
         String sql = "SELECT id, nome, email, cpf, celular, tipo FROM usuarios WHERE tipo = 'paciente'";
@@ -125,5 +126,33 @@ public class UsuarioDAO {
             e.printStackTrace();
         }
     }
+=======
+    public Usuario buscarPorId(int id, String realPathBase) {
+    Usuario u = null;
+    String sql = "SELECT * FROM usuarios WHERE id = ?";
+
+    try (Connection conn = DatabaseConnection.getConnection(realPathBase);
+         PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+        stmt.setInt(1, id);
+        ResultSet rs = stmt.executeQuery();
+
+        if (rs.next()) {
+            u = new Usuario();
+            u.setId(rs.getInt("id"));
+            u.setNome(rs.getString("nome"));
+            u.setEmail(rs.getString("email"));
+            u.setCpf(rs.getString("cpf"));
+            u.setCelular(rs.getString("celular"));
+            u.setTipo(rs.getString("tipo"));
+        }
+
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+
+    return u;
+}
+>>>>>>> 1fb03a4702225d4c801e2c1b05b125ee6b5f6ad5
 }
 

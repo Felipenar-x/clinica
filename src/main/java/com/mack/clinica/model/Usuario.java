@@ -6,10 +6,17 @@ package com.mack.clinica.model;
 public class Usuario {
     private int id;
     private String nome;
+<<<<<<< HEAD
     private String tipo;
     private String email;
     private String cpf;
     private String celular;
+=======
+    private String email;
+    private String cpf;
+    private String celular;
+    private String tipo; // paciente ou admin
+>>>>>>> 1fb03a4702225d4c801e2c1b05b125ee6b5f6ad5
 
     // Getters e Setters
     public int getId() {
@@ -35,7 +42,11 @@ public class Usuario {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+<<<<<<< HEAD
      
+=======
+
+>>>>>>> 1fb03a4702225d4c801e2c1b05b125ee6b5f6ad5
     public void setEmail(String string) {
         this.email = string;
     }
@@ -59,4 +70,8 @@ public class Usuario {
     public String getCelular() {
         return celular;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1fb03a4702225d4c801e2c1b05b125ee6b5f6ad5
