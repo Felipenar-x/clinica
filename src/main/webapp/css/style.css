@@ -205,12 +205,10 @@ form button:hover {
     border-bottom: 2px solid #0056b3;
 }
 .agenda-table tr:nth-child(even) {
-    background: #000000;
-    color: #000000;
+    background: #f4f8fb;
 }
 .agenda-table tr:nth-child(odd) {
-    background: #000000;
-    color: #000000;
+    background: #e9f1fa;
 }
 .agenda-table td {
     font-size: 15px;
@@ -222,21 +220,16 @@ form button:hover {
     border-radius: 12px;
     font-size: 13px;
     font-weight: 500;
-    color: #000000;
+    color: #fff;
 }
-.status-badge.status-agendado, .status-badge.status-agendado * {
-    background: #007BFF !important;
+.status-agendado {
+    background: #007BFF;
+}
+.status-badge.status-agendado {
+    background: #007BFF;
     color: #111 !important;
     -webkit-text-fill-color: #111 !important;
     text-shadow: none !important;
-    filter: none !important;
-    mix-blend-mode: normal !important;
-}
-.status-badge.status-agendado span,
-.status-badge.status-agendado strong,
-.status-badge.status-agendado em {
-    color: #111 !important;
-    -webkit-text-fill-color: #111 !important;
 }
 .status-realizado {
     background: #28a745;

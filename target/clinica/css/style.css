@@ -225,6 +225,12 @@ form button:hover {
 .status-agendado {
     background: #007BFF;
 }
+.status-badge.status-agendado {
+    background: #007BFF;
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+    text-shadow: none !important;
+}
 .status-realizado {
     background: #28a745;
 }
