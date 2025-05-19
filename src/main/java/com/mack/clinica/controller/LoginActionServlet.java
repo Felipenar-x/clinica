@@ -32,6 +32,7 @@ public class LoginActionServlet extends HttpServlet {
 
         if (usuario != null) {
             HttpSession session = request.getSession();
+            session.setAttribute("usuarioLogado", usuario); // Salva o objeto completo
             session.setAttribute("id", usuario.getId());
             session.setAttribute("nome", usuario.getNome());
             session.setAttribute("tipo", usuario.getTipo());

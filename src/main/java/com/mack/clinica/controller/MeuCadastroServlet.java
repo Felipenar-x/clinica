@@ -15,7 +15,7 @@ import jakarta.servlet.ServletException;
 // import javax.servlet.http.*;
 import java.io.IOException;
 
-@WebServlet("/meuCadastro")
+@WebServlet("/meu_cadastro")
 public class MeuCadastroServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -25,17 +25,15 @@ public class MeuCadastroServlet extends HttpServlet {
         Usuario usuarioLogado = (Usuario) session.getAttribute("usuarioLogado");
 
         if (usuarioLogado == null || !"paciente".equals(usuarioLogado.getTipo())) {
-            response.sendRedirect("login.jsp");
+            response.sendRedirect("index.jsp");
             return;
         }
 
+        String realPathBase = request.getServletContext().getRealPath("/");
         UsuarioDAO dao = new UsuarioDAO();
-        Usuario pacienteAtualizado = dao.buscarPorId(usuarioLogado.getId(), usuarioLogado.getTipo());
+        Usuario pacienteAtualizado = dao.buscarPorId(usuarioLogado.getId(), realPathBase);
 
-        request.setAttribute("paciente", pacienteAtualizado);
-        request.getRequestDispatcher("meu_cadastro.jsp").forward(request, response);
-        request.setAttribute("usuario", paciente);
-
-        
+        request.setAttribute("usuario", pacienteAtualizado);
+        request.getRequestDispatcher("showusercadastro.jsp").forward(request, response);
     }
 }

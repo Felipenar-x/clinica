@@ -1,30 +1,15 @@
-<<<<<<< HEAD
-D:\clinica\src\main\java\com\mack\clinica\controller\PacienteServlet.java
-D:\clinica\src\main\java\com\mack\clinica\model\UsuarioDAO.java
-D:\clinica\src\main\java\com\mack\clinica\model\ConsultaDAO.java
-D:\clinica\src\main\java\com\mack\clinica\model\Usuario.java
-=======
-<<<<<<< HEAD
-C:\xampp\htdocs\clinica-1\src\main\java\com\mack\clinica\model\UsuarioDAO.java
-C:\xampp\htdocs\clinica-1\src\main\java\com\mack\clinica\util\DatabaseConnection.java
-C:\xampp\htdocs\clinica-1\src\main\java\com\mack\clinica\controller\AgendarConsultaServlet.java
-C:\xampp\htdocs\clinica-1\src\main\java\com\mack\clinica\controller\PacienteDashboardServlet.java
-C:\xampp\htdocs\clinica-1\src\main\java\com\mack\clinica\controller\LogoutServlet.java
-C:\xampp\htdocs\clinica-1\src\main\java\com\mack\clinica\controller\LoginServlet.java
-C:\xampp\htdocs\clinica-1\src\main\java\com\mack\clinica\model\AgendarConsultaDAO.java
-C:\xampp\htdocs\clinica-1\src\main\java\com\mack\clinica\model\Usuario.java
-C:\xampp\htdocs\clinica-1\src\main\java\com\mack\clinica\controller\AdminDashboardServlet.java
-C:\xampp\htdocs\clinica-1\src\main\java\com\mack\clinica\controller\LoginActionServlet.java
-C:\xampp\htdocs\clinica-1\src\main\java\com\mack\clinica\controller\MeuCadastroServlet.java
-=======
->>>>>>> 1fb03a4702225d4c801e2c1b05b125ee6b5f6ad5
-D:\clinica\src\main\java\com\mack\clinica\controller\MinhasConsultasServlet.java
-D:\clinica\src\main\java\com\mack\clinica\controller\LogoutServlet.java
-D:\clinica\src\main\java\com\mack\clinica\controller\LoginActionServlet.java
-D:\clinica\src\main\java\com\mack\clinica\util\DatabaseConnection.java
-D:\clinica\src\main\java\com\mack\clinica\controller\PacienteDashboardServlet.java
-D:\clinica\src\main\java\com\mack\clinica\model\AgendarConsultaDAO.java
-D:\clinica\src\main\java\com\mack\clinica\controller\AdminDashboardServlet.java
-D:\clinica\src\main\java\com\mack\clinica\controller\AgendarConsultaServlet.java
-D:\clinica\src\main\java\com\mack\clinica\controller\LoginServlet.java
->>>>>>> 8630b94ef89c2091707645b806ee34ad4f37827d
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\util\DatabaseConnection.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\model\Usuario.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\controller\UpdateUserServlet.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\controller\PacienteDashboardServlet.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\controller\MeuCadastroServlet.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\model\UsuarioDAO.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\controller\LoginActionServlet.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\controller\LoginServlet.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\model\ConsultaDAO.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\controller\PacienteServlet.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\controller\AgendarConsultaServlet.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\controller\LogoutServlet.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\controller\AdminDashboardServlet.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\model\AgendarConsultaDAO.java
+C:\xampp\htdocs\clinica-2\src\main\java\com\mack\clinica\controller\MinhasConsultasServlet.java

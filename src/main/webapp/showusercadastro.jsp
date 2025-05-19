@@ -15,16 +15,21 @@
         <div class="nav-links">
             <a href="paciente_dashboard">Home</a>
             <a href="agendarConsulta">Agendamento de Consultas</a>
-            <a href="carne">Minha Agenda</a>
-            <a href="showusercadastro.jsp">Meu Cadastro</a>
+            <a href="minha_agenda">Minha Agenda</a>
+            <a href="meu_cadastro">Meu Cadastro</a>
             <a href="${pageContext.request.contextPath}/logout" class="logout-link">Logout</a>
         </div>
     </div>
 
     <!-- Conteúdo principal -->
     <div class="content">
-        <h1><a href="meuCadastro">Meus dados</a></h1>
+        <h1>Meus dados</h1>
         <p>Bem-vindo a seus dados, onde você poderá visualizar e editar seus dados.</p>
+        
+        <% if ("sucesso".equals(request.getParameter("msg"))) { %>
+            <div class="alert alert-success">Dados atualizados com sucesso!</div>
+        <% } %>
+        
         <form method="post" action="updateUser" class="form-container">
 
             <label for="nome">Nome:</label>
