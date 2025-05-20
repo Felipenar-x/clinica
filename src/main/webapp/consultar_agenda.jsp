@@ -24,7 +24,7 @@
             <a href="pacientes">Cadastro de Pacientes</a>
             <a href="medicos">Cadastro de Médicos</a>
             <a href="consultar_agenda">Consultar Agenda</a>
-            <a href="#">Ficha Clínica</a>
+            <a href="ficha_clinica">Ficha Clínica</a>
             <a href="${pageContext.request.contextPath}/logout" class="logout-link">Logout</a>
         </div>
     </div>

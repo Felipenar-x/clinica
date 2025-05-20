@@ -82,7 +82,7 @@ public class UsuarioDAO {
                 medicos.add(u);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new RuntimeException("Erro ao listar médicos no banco de dados.", e);
         }
         return medicos;
     }

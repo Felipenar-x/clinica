@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 import com.mack.clinica.util.DatabaseConnection;
@@ -85,6 +86,8 @@ public class ConsultaDAO {
         } catch (SQLException e) {
             throw new RuntimeException("Erro ao listar consultas", e);
         }
+        // Após obter a lista de consultas
+        consultas.sort(Comparator.comparingInt(Consulta::getId));
         return consultas;
     }
 

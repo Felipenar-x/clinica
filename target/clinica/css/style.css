@@ -151,21 +151,12 @@ form button:hover {
 
 /* Estilo para botões pequenos */
 .btn-pequeno {
-<<<<<<< HEAD
-    padding: 4px 12px;
-    font-size: 13px;
-    border-radius: 4px;
-    margin: 0;
-    min-width: 0;
-    height: 32px;
-=======
     padding: 4.4px 13.2px; /* 10% maior que 4px 12px */
     font-size: 14.3px;     /* 10% maior que 13px */
     border-radius: 4px;
     margin: 0;
     min-width: 0;
     height: 35.2px;        /* 10% maior que 32px */
->>>>>>> 7ced6ddc96f45b76fdb3facfea04f1931233eca8
     line-height: 1;
     cursor: pointer;
 }
@@ -173,11 +164,7 @@ form button:hover {
 .botoes-topo {
     display: flex;
     gap: 8px;
-<<<<<<< HEAD
-    justify-content: flex-start;
-=======
     justify-content: center; /* Centraliza os botões */
->>>>>>> 7ced6ddc96f45b76fdb3facfea04f1931233eca8
     align-items: center;
     margin-bottom: 20px;
 }
@@ -196,8 +183,6 @@ form button:hover {
     background-color: #0056b3;
 }
 
-<<<<<<< HEAD
-=======
 .agenda-table {
     width: 90%;
     max-width: 800px;
@@ -257,4 +242,3 @@ form button:hover {
     color: #333;
 }
 
->>>>>>> 7ced6ddc96f45b76fdb3facfea04f1931233eca8
