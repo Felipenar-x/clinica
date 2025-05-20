@@ -17,7 +17,7 @@
             <a href="admin_dashboard">Home</a>
             <a href="pacientes">Cadastro de Pacientes</a>
             <a href="medicos">Cadastro de Médicos</a>
-            <a href="#">Consultar Agenda</a>
+            <a href="consultar_agenda">Consultar Agenda</a>
             <a href="#">Ficha Clínica</a>
             <a href="${pageContext.request.contextPath}/logout" class="logout-link">Logout</a>
         </div>
