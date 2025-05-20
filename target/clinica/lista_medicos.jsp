@@ -59,7 +59,7 @@
                     <form action="medicos" method="get" style="display:inline;" onsubmit="return confirm('Excluir médico?');">
                         <input type="hidden" name="action" value="delete">
                         <input type="hidden" name="id" value="<%= m.getId() %>">
-                        <button type="submit" class="action-btn delete-btn">Excluir</button>
+                        <button type="submit" class="action-btn delete-btn" style="background:#db0101;">Excluir</button>
                     </form>
                 </td>
             </tr>
