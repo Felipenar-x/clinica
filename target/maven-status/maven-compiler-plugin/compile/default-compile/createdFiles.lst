@@ -4,6 +4,7 @@ com\mack\clinica\model\ConsultaDAO$Consulta.class
 com\mack\clinica\controller\LoginServlet.class
 com\mack\clinica\controller\PacienteDashboardServlet.class
 com\mack\clinica\controller\MinhasConsultasServlet.class
+com\mack\clinica\controller\ConsultarAgendaServlet.class
 com\mack\clinica\controller\LogoutServlet.class
 com\mack\clinica\controller\LoginActionServlet.class
 com\mack\clinica\model\ConsultaDAO.class
