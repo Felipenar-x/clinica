@@ -1,9 +1,11 @@
 ==============================================
+
 Bruno Soares Vilalba - 1044917
 
 Felipe Yuji Naraki - 10443778
 
 Aruak Teixeira Malta - 10443742
+
 ==============================================
 
 Para instalar o Maven, acesse o site oficial https://maven.apache.org/download.cgi e baixe a última versão estável. Depois, extraia o arquivo ZIP em uma pasta de sua escolha, por exemplo: C:\Program Files\Apache\Maven. Em seguida, configure as variáveis de ambiente: defina MAVEN_HOME apontando para a pasta onde extraiu o Maven e adicione %MAVEN_HOME%\bin ao Path do sistema. Para verificar se a instalação foi bem-sucedida, abra o terminal (Prompt de Comando ou PowerShell) e digite mvn -v. A versão instalada do Maven deve ser exibida.
